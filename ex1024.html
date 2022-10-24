@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <h1>함수 만들고 사용하기</h1>
+    <h3>3개의 숫자를 더해주는 함수</h3>
+    <script>
+        function add3(num1,num2,num3){
+            let result=num1+num2+num3;
+            return result
+        }
+    </script>
+    <script>
+        let frt=prompt("첫번째 숫자입력")
+        let snd=prompt("두번째 숫자입력")
+        let trd=prompt("세번째 숫자입력")
+        frt=parseInt(frt)
+        snd=parseInt(snd)
+        trd=parseInt(trd)
+        sum3=add3(frt,snd,trd)
+        document.write("3개의 숫자의 합은"+sum3+"입니다")
+    </script>
+</body>
+</html>
